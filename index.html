@@ -20,6 +20,7 @@
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#about">Sobre Nosotros</a></li>
                 <li><a href="#products">Productos</a></li>
+                <li><a href="#shop">Shop</a></li>
             </ul>
         </nav>
     </header>
@@ -53,6 +54,40 @@
                 <img src="cafe prueba.svg" alt="Café Premium 500grs">
                 <h3>Café Brasil 500g.</h3>
                 <p>Café 100% orgánico, ideal para los paladares más exigentes.</p>
+                <p class="price">€10.50</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Tienda -->
+    <section id="shop">
+        <h2>TIENDA</h2>
+        <div class="filters">
+            <label for="filter-origin">Origen:</label>
+            <select id="filter-origin">
+                <option value="all">Todos</option>
+                <option value="brazil">Brasil</option>
+                <option value="colombia">Colombia</option>
+            </select>
+            <label for="filter-roast">Tueste:</label>
+            <select id="filter-roast">
+                <option value="all">Todos</option>
+                <option value="light">Claro</option>
+                <option value="medium">Medio</option>
+                <option value="dark">Oscuro</option>
+            </select>
+        </div>
+        <div class="shop-products">
+            <div class="product-item" id="shop-product1" onclick="openModal('product1')">
+                <img src="cafe prueba.svg" alt="Café Brasil 250g">
+                <h3>Café Brasil 250g</h3>
+                <p>Notas de cacao y nuez.</p>
+                <p class="price">€5.99</p>
+            </div>
+            <div class="product-item" id="shop-product2" onclick="openModal('product2')">
+                <img src="cafe prueba.svg" alt="Café Brasil 500g">
+                <h3>Café Brasil 500g</h3>
+                <p>Café orgánico de tueste oscuro.</p>
                 <p class="price">€10.50</p>
             </div>
         </div>
