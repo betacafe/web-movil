@@ -8,22 +8,20 @@
 /* Fuentes y colores generales */
 body {
     font-family: 'Poppins', sans-serif;
-    color: #000; /* Texto en negro */
+    color: #000;
     line-height: 1.6;
-
-    /* Textura añadida al fondo */
-    background-image: url('textura.jpg'); /* Ruta a la textura */
-    background-size: cover; /* Ajusta para que cubra toda la pantalla */
-    background-repeat: no-repeat; /* No repetir la textura */
-    background-attachment: fixed; /* Fondo fijo al hacer scroll */
+    background-image: url('textura.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Colores personalizados */
 :root {
     --blanco: #ffffff;
-    --marron-claro: #e8d8c7; /* Marrón muy claro, más suave */
-    --marron: #8e5e3c; /* Marrón más oscuro, similar al color del café */
-    --marron-oscuro: #6f3d23; /* Marrón más oscuro para algunos fondos */
+    --marron-claro: #e8d8c7;
+    --marron: #8e5e3c;
+    --marron-oscuro: #6f3d23;
 }
 
 /* Cabecera */
@@ -36,14 +34,13 @@ header {
 }
 
 header .logo img {
-    height: 80px; /* Ajustamos tamaño para pantallas pequeñas */
+    height: 80px;
     width: auto;
 }
 
 header nav ul {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap; /* Ajuste para pantallas más pequeñas */
 }
 
 header nav ul li {
@@ -55,86 +52,64 @@ header nav ul li a {
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
-    transition: color 0.3s ease, transform 0.2s ease;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem; /* Reducimos tamaño para móviles */
+    font-size: 0.9rem;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 header nav ul li a:hover {
-    color: #6f3d23;
+    color: var(--marron-oscuro);
 }
 
 header nav ul li a:active {
-    transform: scale(0.98); /* Efecto de "presionar" al hacer clic */
+    transform: scale(0.98);
 }
 
-/* Hero section */
+/* Hero Section */
 .hero {
     background-color: var(--marron-claro);
     color: var(--blanco);
     text-align: center;
-    padding: 4rem 1rem; /* Ajustamos padding para dispositivos pequeños */
+    padding: 4rem 1rem;
 }
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem; /* Tamaño reducido para móviles */
+    font-size: 2rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
-    color: #000; /* Color negro para los títulos */
+    color: #000;
 }
 
 .hero p {
-    font-size: 1.2rem; /* Ajustamos tamaño */
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    color: #000; /* Color negro para los párrafos */
+    color: #000;
 }
 
 .cta-button {
     background-color: var(--marron);
     color: var(--blanco);
-    padding: 0.8rem 1.5rem; /* Botón más pequeño */
+    padding: 0.8rem 1.5rem;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem; /* Ajustamos el tamaño del texto */
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cta-button:hover {
-    background-color: #6f3d23; /* Un marrón más oscuro */
+    background-color: var(--marron-oscuro);
 }
 
 .cta-button:active {
-    transform: scale(0.98); /* Efecto de "presionar" al hacer clic */
+    transform: scale(0.98);
 }
 
-/* Sección Sobre Nosotros */
-#about {
-    padding: 4rem 1rem; /* Ajustamos para pantallas pequeñas */
-    text-align: center; /* Centrar el contenido */
-}
-
-#about .about-title {
-    margin-bottom: 2rem; /* Espacio debajo de la imagen */
-}
-
-#about .about-title img {
-    width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor */
-    max-width: 400px; /* Limitar el ancho máximo */
-    height: auto;
-}
-
-#about p {
-    font-size: 1rem;
-    margin-bottom: 2rem; /* Espacio debajo del párrafo */
-    color: #333; /* Color negro más suave para el texto */
-}
-
-/* Sección de productos */
+/* Sección Productos */
 #products {
-    padding: 3rem 1rem; /* Ajustamos para pantallas pequeñas */
+    padding: 3rem 1rem;
     background-color: #f8f8f8;
     text-align: center;
 }
@@ -143,13 +118,13 @@ header nav ul li a:active {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    color: #000; /* Color negro para los títulos */
+    color: #000;
 }
 
 .product-list {
     display: flex;
     justify-content: center;
-    gap: 1.5rem; /* Espacio más pequeño */
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -159,15 +134,15 @@ header nav ul li a:active {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 200px; /* Tamaño reducido */
+    width: 200px;
     text-align: left;
     position: relative;
-    cursor: pointer; /* Indicamos que es clickeable */
+    cursor: pointer;
 }
 
 .product-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efecto de sombra al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .product-item img {
@@ -178,16 +153,55 @@ header nav ul li a:active {
 }
 
 .product-item .price {
-    font-weight: bold; /* Precio en negrita */
+    font-weight: bold;
     font-size: 1rem;
-    color: #fff; /* Color blanco para el precio */
+    color: #fff;
     position: absolute;
     top: 10px;
     right: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0.3rem 0.5rem;
     border-radius: 5px;
-    animation: pricePop 0.3s ease;
+}
+
+/* Sección Tienda */
+#shop {
+    padding: 3rem 1rem;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#shop h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+.filters {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.filters label {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.filters select {
+    padding: 0.5rem;
+    border: 1px solid var(--marron);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shop-products {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 /* Modal */
@@ -201,8 +215,6 @@ header nav ul li a:active {
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    animation: modalFadeIn 0.5s forwards;
 }
 
 .modal-content {
@@ -239,10 +251,9 @@ header nav ul li a:active {
     header nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
-    .product-item {
+    .product-item, .shop-products .product-item {
         width: 90%;
     }
 }
